@@ -38,10 +38,3 @@ jobs:
           context: .
           push: true
           tags: kid2611/hello-world:latest
-    
-      - name: Deploy to Render
-        uses: johnbeynon/render-action@0.0.8
-        with:
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_API_KEY }}
-          image: kid2611/hello-world:latest
